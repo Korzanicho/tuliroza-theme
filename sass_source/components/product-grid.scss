@@ -1,0 +1,67 @@
+//Siatka produktów
+.products .product,
+.site-footer .footer-widgets .block{
+    margin-bottom: 30px;
+    @media #{$small}{
+        float: left;
+        width: 50%;
+        @include plpr15;
+    }   
+    @media #{$medium}{
+        float: left;
+        width: 25%;
+        margin-right: 0;
+    }
+    img{
+        width: 100%;
+        display: table-cell;
+        vertical-align: middle;
+    }
+}
+
+//Karta produktu
+.product-grid-wrapper{
+    @include basic-shadow;
+    position: relative;
+    padding: 6px;
+    a{
+        display: block;
+        overflow: hidden;
+    }
+    a > img{
+        @include basic-transition;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    .onsale{
+        left: 6px;
+        top: 6px;
+    }
+}
+
+.product-grid-desc{
+    padding: 20px 6px;
+    .price{
+        font-size: 17px;
+        color: darken($accent-color,20);
+        
+        del{
+            color: lighten($dark-grey,10%);
+            font-size: 15px;
+        }
+    }
+}
+
+.product-grid-divider{
+    border-bottom: 2px solid $bright-border-color;
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+    clear: both;
+    height: 20px;
+}
+
+.storefront-product-section li{
+    border-bottom: none;
+}

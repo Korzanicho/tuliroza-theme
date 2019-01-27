@@ -1,0 +1,43 @@
+//Style ogólne
+input[type="button"], input[type="reset"], input[type="submit"], .button{
+    padding: 8px 20px;
+    font-weight: 400;
+    vertical-align: top;
+    line-height: 1.47;
+    box-shadow: none;
+    outline: none;
+    font-family: $primary-font;
+    @include basic-transition;
+    &:active, &:focus{
+        outline: none;
+    }
+}
+
+//colory i hover
+.page .button{
+    background-color: $main-text-color;
+    color: $white;
+    &:hover{
+        background: lighten($main-text-color,$lda);
+    }
+}
+
+//Przyciski CTA
+#page .checkout-button,
+#page .single_add_to_cart_button,
+#page #place_order,
+#page .login .button,.page button[name="save_address"], .page button[name="save_account_details"],
+a.button.add_to_cart_button{
+    background: $accent-color;
+    color: $white;
+    &:hover{
+        background: darken($accent-color,$lda);
+    }
+}
+
+//Przycisk kupuję i płacę
+#page #place_order{
+    font-size: 20px;
+    width: 100%;
+    padding: 10px;
+}

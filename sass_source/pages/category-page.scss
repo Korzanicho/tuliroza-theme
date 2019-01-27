@@ -1,0 +1,42 @@
+//Sorting 
+.storefront-sorting{
+    @media #{$small}{
+        @include plpr15;
+    }
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.woocommerce-ordering{
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    select{
+        -moz-apperance: none;
+        box-shadow: none;
+        border: none;
+        padding: 8px 10px;
+        margin-bottom: 10px;
+        option{
+            font-family: $primary-font;
+        }
+    }
+}
+
+select.wppp-select{
+    -moz-apperance: none;
+    box-shadow: none;
+    border: none;
+    padding: 8px 10px;
+    margin-bottom: 10px;
+    option{
+        font-family: $primary-font;
+    }
+}
+
+.woocommerce-result-count{
+    display: inline-block;
+    padding: 10px 0;
+    margin-bottom: 0;
+    margin-left: 10px;
+}

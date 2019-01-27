@@ -1,0 +1,115 @@
+//Ogólne style panelu logowania i rejestracji
+.woocommerce-account{
+    @media #{$small}{
+        #customer_login.col2-set { 
+            width: 100%;
+        }
+    }
+    
+    
+    h2{
+        margin-bottom: 20px;
+    }
+    .woocommerce{
+        @media #{$small}{
+            width: 70%;
+            margin: 0 auto;
+        }
+    }
+    #customer_login .col-1{
+        @media #{$small}{
+            width: 47%;
+            border-bottom: none;
+            float: left;
+            display: inline-block;   
+        }
+        border-bottom: 1px solid $bright-border-color;
+        padding: 30px;
+        margin-top: 10px;
+        a{
+            color: $main-text-color;
+            margin-top: 10px;
+            display: inline-block;
+            &:hover{
+                color: $accent-color;
+            }
+        }
+        .inline{
+            float: right;
+            display: inline-block;
+            input{
+                position: relative;
+                top: 3px;
+            }
+        }
+        .lost-password{
+            margin-bottom: 0;
+        }
+    } 
+    #customer_login .col-2{
+        @media #{$small}{
+            width: 47%;
+            display: inline-block;
+            border-left: 1px solid $bright-border-color;   
+        }
+        padding: 30px;
+        margin-top: 10px;
+        a{
+            color: $main-text-color;
+            margin-top: 10px;
+            display: inline-block;
+            &:hover{
+                color: $accent-color;
+            }
+        }
+        .inline{
+            float: right;
+            display: inline-block;
+            input{
+                position: relative;
+                top: 3px;
+            }
+        }
+        .lost-password{
+            margin-bottom: 0;
+        }
+    }
+}
+
+//Nawigacja Po Zalogowaniu
+.entry-content .woocommerce{
+    width: 100%;
+}
+.woocommerce .woocommerce-MyAccount-navigation{
+    border-bottom: 1px solid $bright-border-color;
+    ul{
+        @media #{$small}{
+            width: 70%;   
+        }
+        margin: auto;
+    }
+    li{
+        display: inline-block;
+        margin-right: 15px;
+        border-bottom: none;
+        padding: 10px;
+        &:hover{
+            @include basic-transition;
+            background: $main-bg-color;
+            color: $accent-color;
+        }
+        a{
+            color: $main-text-color;
+            &:hover{
+                color: $accent-color;
+            }
+        }
+    }
+}
+
+.woocommerce-MyAccount-content{
+    padding: 15px;
+}
+
+
+

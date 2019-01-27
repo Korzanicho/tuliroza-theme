@@ -1,0 +1,271 @@
+//Ogólne właściwości nagłówka
+.site-header{
+    background: $white;
+    color: $main-text-color;
+    padding-top: 0;
+    margin-bottom: 30px;
+}
+
+.site-header-inner{
+    width: 100%;
+    position: relative;
+    padding-top: 30px;
+    @media #{$small}{
+        @include plpr15;
+    }
+}
+
+.site-header{
+    .col-full{
+        padding-bottom: 0
+    }
+}
+
+//logo
+.site-header{
+    @media #{$medium}{
+        min-height: 250px;
+        position: relative;
+    }
+}
+//.site-header .site-branding{
+//    float: none;
+//    width: auto;
+//    margin: 0;
+//    clear: none;
+//    display: table-cell;
+//    .site-title{
+//        line-height: 2em;
+//        a{
+//            font-size: 23px;
+//            color: $main-text-color;
+//            @include basic-transition;
+//            letter-spacing: 0.2em;
+//            text-transform: uppercase;
+//            &:hover{
+//                color: $accent-color;
+//            }
+//        }
+//    }
+//    @media #{$medium}{
+//        //position: absolute;
+//    }
+//}
+
+.site-branding{
+    position: relative;
+    min-height: 175px;
+    margin: 0;
+    img{
+        @media #{$small}{
+            display: block;
+            position: absolute;
+            right: 20%;
+        }
+    }
+}
+
+.storefront-primary-navigation .col-full{
+    text-align: center;
+    max-height: 25px;
+}
+
+//Wyśrodkowanie headeru
+.site-header{
+    background-position: center; 
+}
+
+//Wyszukiwarka
+.woocommerce-active .site-header .site-search{
+    display: none;
+    float: none;
+    width: 100%;
+    margin: 0;
+    clear: none;
+    margin-top: 25px;
+    @media #{$small}{
+        margin-top: 0;
+        //display: table-cell;
+        vertical-align: top;
+        padding-right: 30%;
+        padding-top: 5px;
+        width: 30%;
+    }
+}
+
+//Koszyk
+.widget_shopping_cart_content{
+    display: none;
+}
+
+.woocommerce-active .site-header .site-header-cart{
+    color: black;
+    width: auto;
+    float: none;
+    margin: 0;
+    display: none;
+    @media #{$small}{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 15px;
+        z-index: 9999;
+        padding: 20px;
+        background: $white;
+        text-align: center;
+        width: 66px;
+        height: 150px;
+        a{
+            color: black;
+            font-size: 20px;
+            position: relative;
+            top: 5px;
+        }
+        .cart-icon{
+            color: black;
+            margin-bottom: 5px;
+        }    
+    }
+}
+
+//Menu
+.woocommerce-active .site-header .main-navigation{
+    color: $white;
+    width: auto;
+    float: none;
+    margin: 0 auto;
+    max-height: 25px;
+    @media #{$medium}{
+        //position: absolute;
+        //bottom: -60px;
+        //right: 8%;
+    }
+    
+}
+
+//Menu główne
+
+.menu{
+    border-radius: 10px;
+}
+.primary-navigation ul.menu li.menu-item a, 
+.main-navigation ul.nav-menu ul li a{
+    padding: 0;
+    margin: 0;
+    color: black;
+    text-transform: uppercase;
+}
+
+.woocommerce-active .site-header .main-navigation{
+    padding: 0px;
+    margin: 0 0;
+    position: relative;
+    //border-top: 1px solid $bright-border-color;
+    font-size: 14px;
+    font-weight: 400;
+    @media #{$small}{
+        width: auto;
+        margin-right: 0;
+    }
+    li{
+        margin: 0 20px 0 0;
+        border-bottom: none;
+        a{
+            padding: 12px 15px;
+            color: $main-text-color;
+            @include basic-transition;
+            &:hover{
+                color: $accent-color;
+            }
+        }
+    }
+}
+
+//Menu rozwijanie 
+
+.menu{
+    background: white;    
+}
+
+
+.main-navigation ul.menu ul, .main-navigation ul.nav-menu ul{
+    background: $white;
+    padding: 8px 8px;
+    li{
+        a{
+            padding: 5px 20px;
+            margin: 0;
+            background: $white;
+            @include basic-transition;
+            &:hover{
+                color: $accent-color;
+                background: $white;
+            }
+        }
+    }
+}
+
+.main-navigation ul.menu ul.sub-menu li a{
+    color: lighten($main-text-color,30%);
+}
+
+//Menu mobilne
+.menu-toggle{
+    background: $white;
+    margin: auto;
+    box-shadow: none;
+    color: $main-text-color;
+    font-size: 18px;
+    font-weight: 700;
+    width: 100%;
+    padding: 5px 10px;
+    @include basic-transition;
+    &:hover{
+        color: lighten($main-text-color,30%);
+    }
+    &:active, &:focus{
+        color: $white;
+        background: $main-text-color;
+        outline: none;
+    }
+}
+
+//ul.sub-menu{
+//    min-width: 100%;
+//    max-width: 20px;
+//    padding: 5px;
+//    li{
+//        width: 100%;
+//        a{
+//            width: 50%;
+//        }
+//    }
+//
+//}
+
+.main-navigation ul.menu > li.menu-item-has-children > a::after{
+    display: none !important;
+}
+
+.fa-bars{
+    margin-right: 5px;
+}
+
+.handheld-navigation{
+    background: $white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 120%;
+    li{
+        @include b-bottom;
+        &:first-child{
+            border-top: 1px solid $bright-border-color;
+        }
+    }
+}
+
+.logo-text{
+    display: inline-block;
+    float: left;
+}

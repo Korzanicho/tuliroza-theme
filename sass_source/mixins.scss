@@ -1,0 +1,33 @@
+//Rozmiar tekstu
+@mixin text-size($fs,$lh){
+    font-size: $fs;
+    line-height: $lh;
+}
+
+//Przejścia
+@mixin basic-transition(){
+    transition: all .25s ease-in-out;
+}
+
+//Pozioma kreska
+@mixin b-bottom(){
+    border-bottom: 1px solid $bright-border-color;
+}
+
+//Padding prawy lewy 15px
+@mixin plpr15(){
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+//Clearfix
+@mixin clearfix(){
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+//Cień
+@mixin basic-shadow(){
+    box-shadow: 0 0 1px $shadow-color; 
+}

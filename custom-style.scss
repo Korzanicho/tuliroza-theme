@@ -1,0 +1,26 @@
+//Import Elementów Pomocniczych
+@import 'sass_source/variables.scss';
+@import 'sass_source/mixins.scss';
+@import 'sass_source/global.scss';
+@import 'sass_source/typography.scss';
+
+//Komponenty
+@import 'sass_source/components/product-grid.scss';
+@import 'sass_source/components/buttons.scss';
+@import 'sass_source/components/headers.scss';
+@import 'sass_source/components/forms.scss';
+@import 'sass_source/components/top.scss';
+@import 'sass_source/components/footer.scss';
+
+//Style stron
+@import 'sass_source/pages/single-product.scss';
+@import 'sass_source/pages/category-page.scss';
+@import 'sass_source/pages/cart.scss';
+@import 'sass_source/pages/checkout.scss';
+@import 'sass_source/pages/account.scss';
+@import 'sass_source/pages/front-page.scss';
+@import 'sass_source/pages/order.scss';
+@import 'sass_source/pages/oferta.scss';
+@import 'sass_source/pages/abonament.scss';
+@import 'sass_source/pages/kontakt.scss';
+@import 'sass_source/pages/sklep.scss';

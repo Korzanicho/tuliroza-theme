@@ -1,0 +1,32 @@
+//Zapytanie o media
+$x-small: "only screen and (min-width: 480px)";
+$small: "only screen and (min-width: 768px)";
+$medium: "only screen and (min-width: 992px)";
+
+//Zmienne tekstowe
+$primary-font: 'Merriweather', sans-serif;
+$secondary-font: 'Lato', sans-serif;
+$basic-font-size: 16px;
+$basic-line-height: 1.42857;
+
+//Kolory
+$accent-color: pink;
+$white: #fff;
+$main-text-color: #111;
+$v-light-grey: #f4f4f4;
+$dark-grey: #666;
+$section-border-color: #222;
+$bright-border-color: #eee;
+$black: #000;
+$footer-bg-color: #191919;
+$footer-text-color: $bright-border-color;
+$main-bg-color: $white;
+$shadow-color: rgba(204,204,204,.7);
+$second-color: #03cec6;
+
+//Kolory - komunikaty
+$msg-red: #BB1C23;
+$msg-green: #A7E5E0;
+
+//Przyciemnianie i zajaśnianie
+$lda: 12%;

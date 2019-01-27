@@ -1,0 +1,213 @@
+//Ogólne style stopki
+.site-footer{
+    padding-bottom: 0;
+    padding-top: 0;
+    background: $main-bg-color;
+    a{
+        color: $accent-color;
+        @include basic-transition;
+        &:hover{
+            color: $footer-text-color;
+        }
+    }
+}
+
+//Widgety Produkty
+
+.site-footer .footer-widgets .block{
+    margin-right: 0;
+}
+
+.site-footer > .col-full{
+    display: none;
+}
+
+.footer-widgets{
+    padding-top: 0;
+    border: none;
+    .block{
+        margin-bottom: 20px;
+        div{
+            padding: 15px 15px 10px;
+            margin-bottom: 0;
+            @include basic-shadow;
+            
+        }
+    }
+    ul{
+        font-weight: 400;
+        li{
+            padding: 15px 0;
+            font-size: 12px;
+            width: 100%;
+            @include b-bottom;
+            &:last-child{
+                border-bottom: none;
+            }
+            @include clearfix;
+            a{
+                font-size: 14px;
+                padding-bottom: 5px;
+                display: block;
+                color: $main-text-color;
+                @include basic-transition;
+                &:hover{
+                    color: $accent-color;
+                }
+            }
+            img{
+                float: left;
+                max-width: 60px;
+                height: auto;
+                margin-right: 10px;
+            }
+            ins{
+                color: $accent-color;
+                font-size: 1.1em;
+            }
+            del{
+                font-size: 1.1em;
+                color: lighten($main-text-color,30%);
+            }
+            .amiunt{
+                color: $accent-color;
+            }
+        }
+    }
+}
+
+//Dolna część Stopki
+.sidebar-footerbottom, .sidebar-footermiddle{
+    background: $footer-bg-color;
+    color: $footer-text-color;
+    padding: 30px 15px 10px;
+    @media #{$small}{
+        padding-top: 10px;
+    }
+    h3{
+        color: $footer-text-color;
+        margin: 19px 0;
+    }
+    .footerbottom-widget{
+        @include plpr15;
+        margin-bottom: 30px;
+        @media #{$small}{
+            width: 33.33%;
+            float: left;
+            &:first-child{
+                padding-left: 0;
+            }
+            &:last-child{
+                padding-right: 0;
+            }
+        }
+        a{
+            color: $accent-color;
+            &:hover{
+                color: $footer-text-color;
+            }
+        }
+    }
+}
+
+.footerbottom-divider{
+    height: 1px;
+    background: lighten($dark-grey,30%);
+    clear: both;
+}
+
+.footer-credits{
+    padding: 25px 0 0;
+    p{
+        margin-bottom: 0;
+    }
+}
+
+//FOOTER MIDDLE
+.sidebar-footermiddle{
+    background: white;
+    font-family: 'Devonshire', cursive;
+    color: black;
+    font-size: 2rem;
+    .custom-html-widget{
+        border-left: 2px solid pink;
+        padding: 15px;
+    }
+}
+
+.f-section-title-outer{
+    width: 90%;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    @include clearfix;
+    @include plpr15;
+}
+
+.f-section-title-wrapper{
+    display: table;
+}
+
+.sidebar-footermiddle .f-section-title{
+    font-weight: 700;
+    padding: 10px 20px;
+    display: table-cell;
+    white-space: pre;
+    color: $white;
+    span{
+        color: $second-color;
+    }
+}
+
+.f-section-title-separator{
+    display: table-cell;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+
+.f-section-title-line{
+    border-bottom: 1px solid $second-color;
+    display: block;
+    position: relative;
+    top: 1px;
+    width: 100%;
+}
+
+.fm-left-wrapper{
+    color: $second-color;
+    padding: 15px;
+    width: 100%;
+    border: 1px solid $white;
+    @media #{$small}{
+        float: left;
+        display: inline-block;
+    }
+}
+
+.fm-right-wrapper{
+    padding: 15px;
+    color: $second-color;
+    width: 50%;
+    @media #{$small}{
+        display: inline-block;
+        float: right;
+    }
+}
+
+.col-full .footermiddle-widget:nth-child(2){
+    @media #{$small}{
+        width: 50%;
+    }
+}
+
+.sidebar-footermiddle .fm-title{
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: $second-color;
+    span{
+        color: $white;
+    }
+}
+
+

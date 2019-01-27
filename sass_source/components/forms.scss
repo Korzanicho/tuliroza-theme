@@ -1,0 +1,62 @@
+//Ogólne właściwości pól
+input{
+    font-family: $primary-font;
+}
+
+.woocommerce-checkout #customer_details,
+.woocommerce-account, .comment-respond,
+.site-header{
+    input, textarea{
+        display: block;
+        height: 33px;
+        width: 100%;
+        padding: 6px 12px;
+        background-color: $v-light-grey;
+        border: none;
+        box-shadow: none;
+        margin-bottom: 0;
+        vertical-align: middle;
+    }
+    textarea{
+        height: 33%;
+        vertical-align: middle;
+        
+    }
+    label{
+        font-weight: 400;
+        display: block;
+        margin-bottom: 5px;
+        abbr{
+            color: $msg-red;
+            border: transparent;
+        }
+    }
+}
+
+//Checkbox
+input[type="checkbox"]{
+//    -moz-appearance: none;
+    width: 18px !important;
+    height: 18px !important;
+    line-height: 1;
+    outline: none;
+    margin-right: 7px;
+    display: inline-block;
+}
+
+//Zmiana ilości 
+.quantity input{
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    color: $main-text-color;
+    vertical-align: top;
+    width: 100%;
+    box-shadow: none;
+    height: 34.833px;
+}
+
+//Wyszukiwarka top
+.widget_product_search form::before{
+    color: $dark-grey;
+}

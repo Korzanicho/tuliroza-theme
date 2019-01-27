@@ -1,0 +1,156 @@
+//Body
+body{
+    background-color: $main-bg-color;
+}
+
+//Reset margin i padding
+body{
+    *{
+        margin: 0;
+        padding: 0;
+    }
+}
+
+#primary, #main{
+    margin: 0;
+    padding: 0;
+}
+
+//box-sizing
+*{
+    box-sizing: border-box;
+}
+
+*:before, *:after{
+    box-sizing: border-box;
+}
+
+//tabele
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+//Główna kolumna
+.col-full{
+    max-width: 1200px;
+    padding: 0 15px 15px;
+    margin: 0 auto;
+}
+
+//Zawartość wpisu i strony
+@media #{$small}{
+    @include plpr15;
+}
+
+
+//Clear
+.clear{
+    clear: both;
+}
+
+//odnośniki
+a{
+    font-weight: 400;
+    color: $accent-color;
+    outline: none;
+    @include basic-transition;
+    &:active, &:focus{
+        outline: none;
+    }
+}
+//
+//ul.menu li.current-menu-item > a{
+//    color: $accent-color;
+//}
+
+
+//Elementy z białym tłem
+.product-grid-wrapper, .entry-header, 
+.footer-widgets .block div,
+.single-product-inner, .woocommerce-info,
+.col2-set, .woocommerce-checkout-review-order,
+.woocommerce-account .woocommerce, .promo-box-inner, #customer_login,
+.woocommerce-order, .widget-area{
+    background-color: $white;
+}
+
+//KontentArea
+.content-area{
+    width: 100%;
+}
+
+//Etykieta promocja
+.onsale{
+    display: block;
+    position: absolute;
+    background-color: $msg-red;
+    color: $white;
+    height: 35px;
+    line-height: 35px;
+    width: 100px;
+    text-transform: uppercase;
+    text-align: center;
+    left: 15px;
+    @media #{$small}{
+        left: 30px;
+    }
+}
+
+//Usunięcie błędu z Footera
+.storefront-handheld-footer-bar .columns-3{
+    display: none !important;
+}
+
+del, ins, label, span, .order-total th, .cart-subtotal th,
+strong{
+    font-weight: 400;
+}
+
+//Komunikaty sklepu
+.woocommerce-message{
+    padding: 15px 20px;
+    background: $msg-green;
+    line-height: 33px;
+    margin-bottom: 20px;
+    @media #{$small}{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .button{
+        background: $white;
+        color: $main-text-color;
+        margin-right: 20px;
+    }
+}
+
+.woocommerce-error{
+    padding: 15px 20px;
+    background: $msg-red;
+    color: $white;
+    
+}
+
+//Wymagane w formularzach 
+.required{
+    color: $msg-red;
+}
+
+
+//Div na początku każdej Strony
+.hentry{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+//Ukrycie przerwy z FrontPage
+.post-50{
+    display: none;
+}
+
+
+//Prawy sitebar
+.widget-area{
+    padding: 15px;
+}

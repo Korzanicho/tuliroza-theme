@@ -1,0 +1,86 @@
+//Nagłówki produktów
+.products .product h2{
+    @include text-size(18px,20px);
+    margin: 0 0 5px;
+}
+
+.product_title{
+    @include text-size(27px,30px);
+    margin: 0 0 5px;
+}
+
+.related h2{
+    margin: 20px 0;
+    @media #{$small}{
+        @include plpr15;
+    }
+}
+
+//Nagłówki widgetów stopki
+.widget_products h3{
+    @include text-size(20px,22px);
+    padding: 0 0 20px;
+    margin: 0;
+    color: $main-text-color;
+    border-bottom: 2px solid $bright-border-color;
+}
+
+//Nagłówki sekcji na stronie frontowej
+.section-title-outer{
+    width: 100%;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    @include clearfix;
+    @include plpr15;
+}
+
+section[aria-label="Najnowsze Produkty"] .section-title{
+    display: none;
+}
+
+.section-title-wrapper{
+    display: table;
+    
+}
+
+.section-title{
+    @include text-size(1.6em,1em);
+    padding: 10px 20px;
+    display: table-cell;
+    white-space: pre;
+    color: $white;
+}
+
+.section-title-separator{
+    display: table-cell;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+
+.section-title-line{
+    border-bottom: 1px solid $white;
+    display: block;
+    position: relative;
+    top: 1px;
+    width: 100%;
+}
+
+//Nagłówek strony
+.entry-heater-outer{
+    @media #{$small}{
+        @include plpr15;
+    }
+}
+
+.hentry .entry-header,
+.archive .entry-header, .hentry.type-page .entry-header{
+    padding: 0 30 30 30px;
+    margin-bottom: 1em;
+    border-bottom: 0.5px solid grey;
+}
+
+.entry-title{
+    font-family: 'Devonshire', cursive;
+}

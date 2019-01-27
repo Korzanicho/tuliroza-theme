@@ -1,0 +1,181 @@
+//Ogólne Właściwości
+.home .site-header{
+    margin-bottom: 0;
+}
+
+//Style banera
+.page #post-49 .entry-content{
+    max-width: 100%;
+    margin: 0;
+}
+
+
+//Napisy pod sliderem
+.page .metaslider .caption-wrap{
+    top: 0;
+    bottom: auto;
+    font-size: 28px;
+}
+
+.home-slider-content{
+    text-align: center;
+    padding: 2.5em;
+    line-height: 1.65;
+    @media #{$small}{
+        padding: 17.85em 0;
+    }
+    h1{
+        display: block;
+        margin-bottom: 10px;
+        font-weight: 700;
+        font-size: 36px;
+        color: $white;
+        text-transform: uppercase;
+        @media #{$small}{
+            font-size: 44px;
+        }
+    }
+    h2{
+        color: $white;
+        margin-bottom: 20px;
+    }
+    a{
+        padding: 8px 20px;
+        border: 1px solid $white;
+        color: $white;
+        font-size: 18px;
+        &:hover{
+            background: rgba($white,0.2);
+        }
+    }
+}
+
+//Boxy
+mark.count{
+    display: none;
+}
+
+.storefront-product-categories{
+    margin-bottom: 20px;
+    padding: 30px 0 20px 0;
+    clear: both;
+    h2.section-title{
+      display: none;
+    }
+    .products .product{
+        width: 100%;
+        position: relative;
+        margin-bottom: 20px;
+        @media #{$small}{
+            @include plpr15;
+            display: inline-block;
+            width: 33%;
+            margin-bottom: 0;
+        }
+        img{
+            height: auto;
+            max-width: 100%;
+            display: block;
+            position: relative;
+            margin: 0;
+            @include basic-transition;
+            filter: brightness(0.9);
+            @media #{$small}{
+                max-width: 360px;
+                float: none;
+            }
+        }
+        a{
+            display: block;
+            overflow: hidden;
+        }
+    }
+}
+
+//Napisy na Boxach kategorii
+.category-title-box{
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    @include basic-transition;
+    &:hover{
+        background: rgba($white,0.25);
+    }
+    h2{
+        color: $white;
+        font-size: 22px;
+        text-transform: uppercase;
+        position: relative;
+        font-weight: 700;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+//PromoBox
+.promo-box-homepage{
+    width: 100%;
+    padding-top: 40px;
+    @include clearfix;
+    @media #{$x-small}{
+        @include plpr15;
+    }
+}
+
+.promo-box-inner{
+    background-image: url(images/artificial-background-color-958168.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    border: 5px dotted black; 
+    width: 100%;
+    text-align: center;
+    @include clearfix;
+    padding: 20px;
+    @media #{$medium}{
+        text-align: inherit;
+        
+    }
+    
+}
+
+.promo-box-border{
+    padding: 20px 40px;
+    //border: 1px solid darken($bright-border-color,15%);
+}
+
+.promo-box-left{
+    color: #03cec6;
+    margin-bottom: 10px;
+    display: block;
+    @media #{$medium}{
+        margin-bottom: 0;
+        width: 100%;
+        display: table-cell;
+        vertical-align: middle;
+    }
+    h3{
+        color: #03cec6;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 24px;
+    }
+    p{
+        font-size: 18px;
+    }
+}
+
+.promo-box-right{
+    @media #{$medium}{
+        display: table-cell;
+        vertical-align: middle;
+        min-width: 130px;
+    }
+}
+
+.front-site-main{
+    //background-image: url(images/frontpage_background.jpg);
+}
